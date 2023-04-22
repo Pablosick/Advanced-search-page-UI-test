@@ -1,4 +1,17 @@
+#virtualenv
 venv
+
+#settings project
 .idea/
+
+#browser for start
 chromedriver
+
+#private information
 security
+
+#cache
+.pytest_cache
+
+#result allure
+allureres
