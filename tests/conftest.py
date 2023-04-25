@@ -17,5 +17,5 @@ def driver_supply():
 @pytest.fixture(scope="session")
 def data_supply():
     with open(f"{o_json}", encoding="utf8") as opt_films:
-        opt_film = json.load(opt_films)['data']
+        opt_film = json.load(opt_films)["data"]
     return opt_film

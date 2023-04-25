@@ -29,8 +29,10 @@ def test_film_search(driver_supply, data_supply):
 @allure.title("Полученный результат и поиск нужного фильма")
 def test_movie_result(driver_supply, data_supply):
     """
-     Is there a movie on the advanced search page
+    Is there a movie on the advanced search page
     """
     check_list_films = SearchParameters(driver_supply)
     check_list_films.screenshot("Полученные фильмы", "lists_films")
-    assert check_list_films.check_films(data_supply["film_title"], data_supply["country"], data_supply["genres"])
+    assert check_list_films.check_films(
+        data_supply["film_title"], data_supply["country"], data_supply["genres"]
+    )
